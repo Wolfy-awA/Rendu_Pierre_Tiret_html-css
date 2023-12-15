@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Beyonders";
+  src: url(../Font/Beyonders.ttf) format("truetype");
+}
+
+body {
+  background-color: lightblue;
+}
+
+#menu {
+  margin: auto;
+  width: 95%;
+  display: flex;
+  background-color: #808080;
+  justify-content: center;
+}
+
+.menu_box {
+  background-color: white;
+  border: 5px solid #808080;
+  text-align: center;
+  margin: 0% 5%;
+  padding: 0% 5%;
+}
+
+header {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  background-color: aqua;
+  font-family: Beyonders;
+  font-size: larger;
+}
+
+#content {
+  margin: auto;
+  display: block;
+  width: 95%;
+  background-color: antiquewhite;
+}
+
+#balisong_anatomy {
+  margin: auto;
+  display: flex;
+  width: 100%;
+}
