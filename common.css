@@ -5,32 +5,57 @@
 
 body {
   background-color: lightblue;
+  margin: 0;
 }
 
-#menu {
-  margin: auto;
-  width: 95%;
+header {
   display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: rgb(71, 71, 71);
+  font-family: Beyonders;
+  font-size: larger;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
   background-color: #808080;
-  justify-content: center;
+  width: 100%;
+}
+
+#menu div a {
+  text-decoration: nrgb(36, 35, 35);
 }
 
 .menu_box {
   background-color: white;
-  border: 5px solid #808080;
   text-align: center;
-  margin: 0% 5%;
-  padding: 0% 5%;
+  padding: 10px;
+  transition: background-color 0.3s ease;
 }
 
-header {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  width: 90%;
-  background-color: aqua;
-  font-family: Beyonders;
-  font-size: larger;
+.menu_box a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+.menu_box:hover {
+  background-color: #808080;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    font-size: 0.75rem;
+  }
 }
 
 #content {
@@ -38,10 +63,15 @@ header {
   display: block;
   width: 95%;
   background-color: antiquewhite;
+  font-family: "Inter", sans-serif;
 }
 
 #balisong_anatomy {
   margin: auto;
   display: flex;
   width: 100%;
+}
+
+.main_text {
+  text-align: center;
 }
