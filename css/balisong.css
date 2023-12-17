@@ -1,0 +1,11 @@
+.content {
+  margin: auto;
+  padding: 0px 10px;
+  display: block;
+  width: 95%;
+  background-color: rgb(127, 149, 173);
+  font-family: "Inter", sans-serif;
+  font-size: large;
+  text-align: center;
+}
+

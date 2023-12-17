@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: lightblue;
+  background-color: rgb(161, 161, 161);
   margin: 0;
 }
 
@@ -15,6 +15,13 @@ header {
   background-color: rgb(71, 71, 71);
   font-family: Beyonders;
   font-size: larger;
+}
+
+#menu {
+  position: sticky;
+  top: 0;
+  font-family: Beyonders;
+  width: 100%;
 }
 
 ul {
@@ -29,6 +36,7 @@ ul {
   justify-content: space-around;
   gap: 10px;
   background-color: #808080;
+  border-radius: 0px 0px 20px 20px;
   width: 100%;
 }
 
@@ -38,6 +46,7 @@ ul {
 
 .menu_box {
   background-color: white;
+  border-radius: 15px ;
   text-align: center;
   padding: 10px;
   transition: background-color 0.3s ease;
@@ -47,23 +56,14 @@ ul {
   padding: 10px;
   text-decoration: none;
   color: black;
+  transition: color 0.3s ease;
 }
 .menu_box:hover {
   background-color: #808080;
 }
 
-@media screen and (max-width: 600px) {
-  header {
-    font-size: 0.75rem;
-  }
-}
-
-#content {
-  margin: auto;
-  display: block;
-  width: 95%;
-  background-color: antiquewhite;
-  font-family: "Inter", sans-serif;
+.menu_box a:hover {
+  color: white;
 }
 
 #balisong_anatomy {
@@ -72,6 +72,33 @@ ul {
   width: 100%;
 }
 
-.main_text {
-  text-align: center;
+footer {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 100px;
+  color: white;
+}
+
+footer ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  color: darkred;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  #menu {
+    font-size: 0.75rem;
+  } 
+  .content {
+    font-size: 1rem ;
+  }
+  #menu > ul {
+    border-radius: 0px 0px 13px 13px;
+  }
 }
